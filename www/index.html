@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#0B4C3A">
+<meta name="theme-color" content="#0B4C3A"><link rel="manifest" href="manifest.json"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png"><link rel="apple-touch-icon" href="icon-192.png">
 <title>MIZAN — Atur Kiriman, Rem Tanggal Tua | FEBI UIN RMS</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
@@ -790,6 +790,7 @@ boot(()=>{if(Array.isArray(S.chat)){const n=S.chat.length;S.chat=S.chat.filter(m
 boot(tick);setInterval(tick,1000);boot(chk);boot(applyTheme);boot(net);boot(endAnchor);boot(render);boot(renderLoker);boot(renderTrend);boot(renderBadges);boot(renderPremCard);boot(placeMz);boot(syncRemoteData);
 if(!S.name){$('#obAv').innerHTML=mizi(0,'ok',72);$('#onb').hidden=false}else{setTimeout(()=>mzSay('Halo '+S.name+'! Geser aku kalau mengganggu, atau ketuk 2x untuk ngobrol.'),1500)}
 setInterval(()=>navigator.onLine&&wx(),9e5);
+if('serviceWorker' in navigator && location.protocol.startsWith('http') && location.hostname!=='localhost'){navigator.serviceWorker.register('./sw.js').catch(()=>{})}
 </script>
 </body>
 </html>
