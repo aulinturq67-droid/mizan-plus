@@ -1,0 +1,17 @@
+{
+  "name": "mizan-plus",
+  "version": "1.0.0",
+  "description": "Mizan+ \u2014 Atur Kiriman, Rem Tanggal Tua | FEBI UIN RMS",
+  "scripts": {
+    "cap:sync": "npx cap sync android",
+    "cap:assets": "npx @capacitor/assets generate --android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.2.0",
+    "@capacitor/core": "^6.2.0"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^6.2.0"
+  }
+}
