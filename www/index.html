@@ -323,7 +323,7 @@ function errToast(e){try{const m=(e&&e.message)||String(e);console.error(e);if(D
 addEventListener('error',ev=>errToast(ev.error||ev.message));
 addEventListener('unhandledrejection',ev=>errToast(ev.reason));
 function tg(sel,v){const e=document.querySelector(sel);if(e)e.classList.toggle('on',!!v)}
-const DATA_URL='https://aulinturq67-droid.github.io/mizan-app/data.json';
+const DATA_URL='https://aulinturq67-droid.github.io/mizan-plus/data.json';
 const DATA_CACHE='mizan.remote.v1';
 
 const $=s=>document.querySelector(s),fmt=n=>(n<0?'-':'')+'Rp '+Math.abs(Math.round(n)).toLocaleString('id-ID');
